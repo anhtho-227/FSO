@@ -57,7 +57,7 @@ python3 run_all.py
 
 # Hoặc từng phần riêng:
 python3 -m analysis.self_tests              # chỉ chạy bộ kiểm chứng (nhanh)
-python3 experiments/bpsk/run_fig3.py --mode match      # khớp đúng độ lớn bài báo gốc
+python3 experiments/bpsk/run_fig3.py --mode match      
 python3 experiments/bpsk/run_fig3.py --mode rigorous   # Helstrom THẬT, lộ rõ lỗi #4
 ```
 
@@ -71,7 +71,7 @@ python3 experiments/bpsk/run_fig3.py --mode rigorous   # Helstrom THẬT, lộ r
 | 4 | Quy ước "nhiễu chia sẻ, đảo dấu" khiến Section VIII đánh giá thấp Pe thật 3–8 lần | eq.(32)-(39) | `model/closed_form.py` |
 
 Mỗi công thức có lỗi trong `model/` đều có 2 phiên bản song song: hậu tố `_as_written`
-(đúng y văn bản, tái lập lại đúng những gì bài báo in ra) và `_corrected` (đã sửa).
+(tái lập lại đúng những gì bài báo in ra) và `_corrected` (đã sửa).
 
 ## Lưu ý quan trọng khi diễn giải kết quả
 
