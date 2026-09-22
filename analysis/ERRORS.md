@@ -1,21 +1,12 @@
-# Báo cáo kiểm chứng (BẢN V3 — CUỐI CÙNG): "Quantum Relay-Assisted Free-Space Optical Communication"
+# Báo cáo kiểm chứng: "Quantum Relay-Assisted Free-Space Optical Communication"
 
 **Bài báo:** Bhatnagar, Arti & Bhatnagar — IEEE Photonics Journal, Vol. 17, No. 3, 2025
-**Phương pháp:** đọc trực tiếp ảnh gốc từng trang PDF (không dựa vào OCR text — đã rút kinh nghiệm từ sai sót ở báo cáo V1), đại số ký hiệu (sympy/mpmath), tích phân số (scipy), và **một "trọng tài" độc lập được kiểm định riêng**: toán tử mật độ dựng bằng tích phân số trực tiếp trên eq.(20) (đã xác nhận khớp tuyệt đối công thức Helstrom thuần khiết ở giới hạn không nhiễu).
-
----
-
-## Lịch sử đính chính (để minh bạch quá trình)
-
-- **V1**: kết luận eq.(39)/(76) sai — **SAI**, do OCR làm mất dấu căn/gạch phân số.
-- **V2**: đính chính eq.(39) đúng; chỉ còn 1 lỗi (thiếu "k chẵn" ở eq.24) — **CHƯA ĐẦY ĐỦ**.
-- **V3 (bản này)**: sau khi người dùng cung cấp phân tích độc lập + code đối chiếu, phát hiện thêm **3 lỗi nữa**, nâng tổng số lỗi thật đã xác nhận lên **4 lỗi**.
 
 ---
 
 ## 1. Tóm tắt điều hành
 
-Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằng ảnh gốc PDF và/hoặc tính toán độc lập nhiều lớp**. Ba lỗi đầu nằm ở Appendix B (toán tử mật độ trung bình theo Gamma-Gamma) và Section VI/VII (chuẩn vết Helstrom). Lỗi thứ tư — nghiêm trọng nhất về mặt hệ quả — là cả một **hướng tiếp cận (Section VIII) cho kết quả hệ thống lệch xa (3–8 lần)** so với giới hạn Helstrom thật, dù công thức đóng cuối cùng (eq. 39/76) tự nó được suy diễn/rút gọn đại số chính xác từ điểm xuất phát (eq. 32-34) — vấn đề nằm ở chính **điểm xuất phát đó**, không phải ở các bước đại số sau.
+Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằng ảnh gốc PDF và/hoặc tính toán độc lập nhiều lớp**. Ba lỗi đầu nằm ở Appendix B (toán tử mật độ trung bình theo Gamma-Gamma) và Section VI/VII (chuẩn vết Helstrom). Lỗi thứ tư — nghiêm trọng nhất về mặt hệ quả - là cả một **hướng tiếp cận (Section VIII) cho kết quả hệ thống lệch xa (3–8 lần)** so với giới hạn Helstrom thật, dù công thức đóng cuối cùng (eq. 39/76) tự nó được suy diễn/rút gọn đại số chính xác từ điểm xuất phát (eq. 32-34) — vấn đề nằm ở chính **điểm xuất phát đó**, không phải ở các bước đại số sau.
 
 ---
 
