@@ -40,7 +40,7 @@ $$\sum_{\substack{k=0\\k\text{ even}}}^{m+n}$$
 
 nhưng khi thế công thức Meijer-G (eq. 60) vào để có kết quả cuối (eq. 22-24), điều kiện "k even" **biến mất**, chỉ còn $\sum_{k=0}^{m+n}$.
 
-**Hệ quả khi tính đúng văn bản:** ma trận mật độ dựng ra có $\text{Tr}(\rho)\neq 1$ (thậm chí có thể âm), không còn là toán tử mật độ hợp lệ — dẫn tới xác suất lỗi Helstrom tính ra **âm** ở nhiều giá trị γ (đã kiểm chứng bằng cả Meijer-G và tích phân số).
+**Hệ quả khi tính đúng văn bản:** ma trận mật độ dựng ra có $\text{Tr}(\rho)\neq 1$ (thậm chí có thể âm), không còn là toán tử mật độ hợp lệ - dẫn tới xác suất lỗi Helstrom tính ra **âm** ở nhiều giá trị γ (đã kiểm chứng bằng cả Meijer-G và tích phân số).
 
 ### 3.3 Lỗi #3 - Thiếu hệ số ½ ở eq. (22)-(24)
 
@@ -110,20 +110,4 @@ $$\times\,\Gamma\!\left(\frac{k+1}{2}\right)|\psi_i|^{-m-n-\alpha_1-\beta_1+k}\p
 1. **Có thể tin tưởng:** mô hình kênh (Gamma-Gamma + nhiễu Gauss), công thức Rytov variance, và khung lý thuyết Helstrom nói chung.
 2. **Cần tự sửa trước khi dùng:** eq.(24)/(28) — thêm điều kiện "k chẵn" và hệ số ½; eq.(26)/(30) — thêm dấu `|·|`.
 3. **Không nên dùng trực tiếp để tính số:** eq.(39)/(40)/(76) và mọi kết quả số ở Section IX phụ thuộc vào chúng (Hình 3, 4, 5, 6, 7) — các con số này **đánh giá thấp hơn thực tế 3-8 lần** so với giới hạn Helstrom đúng. Nếu cần con số đáng tin cậy, nên tính lại bằng phương pháp toán tử mật độ đầy đủ (Section V-VII) sau khi đã sửa lỗi #2 và #3.
-4. Xu hướng định tính của bài báo (relay tốt hơn truyền thẳng ở biên độ vừa-cao, nhiễu loạn mạnh làm tăng lỗi, v.v.) **có khả năng vẫn đúng về mặt định tính**, vì lỗi #4 là một *thiên lệch hệ thống* (luôn đánh giá thấp Pe theo cùng một hướng) chứ không phải nhiễu loạn ngẫu nhiên — nhưng **độ lớn con số cụ thể thì không đáng tin**.
-
----
-
-## 7. Ghi nhận
-
-Các phát hiện lỗi #1, #3, và #4 trong báo cáo này xuất phát trực tiếp từ phân tích độc lập và đoạn code đối chiếu do người dùng cung cấp — bao gồm việc chỉ ra đúng quy ước tham số cho hàm Meijer-G (`mpmath.meijerg`), điều mà bản thân tôi đã lập trình sai ở lượt làm việc trước đó. Việc đối chiếu chéo với công cụ/phân tích độc lập bên ngoài đã đóng vai trò quyết định trong việc phát hiện đầy đủ các lỗi này.
-
----
-
-## 8. Danh mục file
-
-| File | Nội dung |
-|---|---|
-| `full_reconstruction_v2.py` | Code tái tạo, dùng eq.(39) đúng theo ảnh gốc — **lưu ý: chưa tính đến lỗi #4**, chỉ tái hiện đúng những gì bài báo viết |
-| Báo cáo này (V3) | Tổng hợp đầy đủ và cuối cùng, 4 lỗi đã xác nhận |
-| Các báo cáo V1, V2 trước | Đã lỗi thời, giữ lại chỉ để tham khảo lịch sử quá trình kiểm chứng |
+4. Xu hướng định tính của bài báo (relay tốt hơn truyền thẳng ở biên độ vừa-cao, nhiễu loạn mạnh làm tăng lỗi, v.v.) **có khả năng vẫn đúng về mặt định tính**, vì lỗi #4 là một *thiên lệch hệ thống* (luôn đánh giá thấp Pe theo cùng một hướng) chứ không phải nhiễu loạn ngẫu nhiên - nhưng **độ lớn con số cụ thể thì không đáng tin**.
