@@ -5,8 +5,7 @@ Tái tạo đầy đủ mô hình toán học và các Hình 1, 3–7 của bài
 > Bhatnagar, Arti & Bhatnagar, "Quantum Relay-Assisted Free-Space Optical Communication",
 > IEEE Photonics Journal, Vol. 17, No. 3, June 2025.
 
-Trong quá trình tái tạo, đã phát hiện **4 lỗi toán học thật** trong bài báo — xác nhận
-bằng ảnh gốc PDF (không dựa vào OCR text) kết hợp tính toán độc lập nhiều lớp. Chi tiết
+Trong quá trình tái tạo, đã phát hiện **4 lỗi toán học thật** trong bài báo. Chi tiết
 đầy đủ (kèm ảnh chụp công thức gốc) xem tại [`analysis/ERRORS.md`](analysis/ERRORS.md).
 
 ## Cấu trúc thư mục
