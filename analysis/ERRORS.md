@@ -15,9 +15,9 @@ Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằn
 | # | Lỗi | Vị trí | Bằng chứng | Mức độ nghiêm trọng |
 |---|---|---|---|---|
 | 1 | Thiếu dấu trị tuyệt đối `\|·\|` quanh $\sum_k\lambda_k$ | eq. (26), (30) | **Ảnh gốc trang 7**: eq.(25) có `Tr\|p₁ρ₁-p₀ρ₀\|`; eq.(26) chỉ còn `Σλk` trần | Cao về mặt hình thức, nhưng nhiều khả năng không lọt vào code tạo Hình 3 của tác giả (đường cong không phẳng ở 0.5) |
-| 2 | Thiếu điều kiện "k chẵn" | eq. (22)-(24), tức eq.(60) | **Ảnh gốc trang 13**: eq.(57) có "$k$ even"; eq.(22) sau khi thế Meijer-G vào thì mất | Cao — làm hỏng hoàn toàn tính hợp lệ của ma trận mật độ (trace ≠ 1) nếu tính đúng văn bản |
-| 3 | Thiếu hệ số **½** | eq. (22)-(24) | **Ảnh gốc trang 13**: eq.(60) có `$b^{-\nu}/2$`; ảnh gốc trang 7 eq.(24): hệ số ½ biến mất ngay trước $G^{2,1}_{1,2}$ | Cao — gây sai lệch đúng gấp 2 lần mọi phần tử ma trận nếu tính đúng văn bản |
-| 4 | Quy ước nhiễu chia sẻ, đảo dấu theo tín hiệu (eq. 32) khiến toàn bộ Section VIII tính **sai bản chất** giới hạn Helstrom | eq. (32)–(39), lan ra toàn bộ Section VIII và các Hình 3–7 dùng eq.(39) | Đối chiếu số trực tiếp: Pe thật (density-operator, đã sửa lỗi #2+#3) = 0.10–0.22; Pe theo eq.(39) chỉ 0.013–0.071 - **lệch 3–8 lần** | **Nghiêm trọng nhất** — ảnh hưởng toàn bộ kết luận định lượng của bài báo |
+| 2 | Thiếu điều kiện "k chẵn" | eq. (22)-(24), tức eq.(60) | **Ảnh gốc trang 13**: eq.(57) có "$k$ even"; eq.(22) sau khi thế Meijer-G vào thì mất | Cao - làm hỏng hoàn toàn tính hợp lệ của ma trận mật độ (trace ≠ 1) nếu tính đúng văn bản |
+| 3 | Thiếu hệ số **½** | eq. (22)-(24) | **Ảnh gốc trang 13**: eq.(60) có `$b^{-\nu}/2$`; ảnh gốc trang 7 eq.(24): hệ số ½ biến mất ngay trước $G^{2,1}_{1,2}$ | Cao - gây sai lệch đúng gấp 2 lần mọi phần tử ma trận nếu tính đúng văn bản |
+| 4 | Quy ước nhiễu chia sẻ, đảo dấu theo tín hiệu (eq. 32) khiến toàn bộ Section VIII tính **sai bản chất** giới hạn Helstrom | eq. (32)–(39), lan ra toàn bộ Section VIII và các Hình 3–7 dùng eq.(39) | Đối chiếu số trực tiếp: Pe thật (density-operator, đã sửa lỗi #2+#3) = 0.10–0.22; Pe theo eq.(39) chỉ 0.013–0.071 - **lệch 3–8 lần** | **Nghiêm trọng nhất** - ảnh hưởng toàn bộ kết luận định lượng của bài báo |
 
 ---
 
@@ -29,9 +29,9 @@ Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằn
 - eq.(25): $P_{e,1}^{(\min)} = \frac12\Big(1-\text{Tr}\big|p_1\rho_1^{(C)}-p_0\rho_0^{(C)}\big|\Big)$ ✅ đúng
 - eq.(26): $P_{e,1}^{(\min)} = \frac12\Big(1-\sum_k\lambda_k\Big)$ ❌ thiếu `|·|`
 
-Vì $\text{Tr}(\Delta) = p_1\text{Tr}(\rho_1) - p_0\text{Tr}(\rho_0) = p_1 - p_0$, với ưu tiên bằng nhau ($p_0=p_1=0.5$) thì $\sum_k\lambda_k = 0$ luôn luôn, bất kể kênh truyền — khiến eq.(26) tính đúng văn bản sẽ **luôn cho $P_e=0.5$**, vô giá trị. Công thức đúng cần là $\sum_k|\lambda_k|$.
+Vì $\text{Tr}(\Delta) = p_1\text{Tr}(\rho_1) - p_0\text{Tr}(\rho_0) = p_1 - p_0$, với ưu tiên bằng nhau ($p_0=p_1=0.5$) thì $\sum_k\lambda_k = 0$ luôn luôn, bất kể kênh truyền - khiến eq.(26) tính đúng văn bản sẽ **luôn cho $P_e=0.5$**, vô giá trị. Công thức đúng cần là $\sum_k|\lambda_k|$.
 
-**Lưu ý:** rất có thể đây chỉ là lỗi đánh máy khi rút gọn từ (25) sang (26)/(29-30), vì nếu lỗi này thực sự lọt vào code tạo Hình 3 của tác giả thì đường "density operator" phải là đường thẳng ngang ở 0.5 — nhưng Hình 3 thực tế cho thấy đường cong giảm dần theo γ giống 2 phương pháp còn lại. Điều này gợi ý tác giả **có** dùng `|λk|` khi lập trình thực tế, chỉ quên viết `|·|` trong bản thảo.
+**Lưu ý:** rất có thể đây chỉ là lỗi đánh máy khi rút gọn từ (25) sang (26)/(29-30), vì nếu lỗi này thực sự lọt vào code tạo Hình 3 của tác giả thì đường "density operator" phải là đường thẳng ngang ở 0.5 - nhưng Hình 3 thực tế cho thấy đường cong giảm dần theo γ giống 2 phương pháp còn lại. Điều này gợi ý tác giả **có** dùng `|λk|` khi lập trình thực tế, chỉ quên viết `|·|` trong bản thảo.
 
 ### 3.2 Lỗi #2 - Thiếu "k chẵn" ở eq. (22)-(24)
 
