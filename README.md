@@ -62,7 +62,7 @@ python3 experiments/bpsk/run_fig3.py --mode match      # khớp đúng độ l�
 python3 experiments/bpsk/run_fig3.py --mode rigorous   # Helstrom THẬT, lộ rõ lỗi #4
 ```
 
-## Tóm tắt 4 lỗi đã xác nhận (chi tiết đầy đủ + ảnh chụp trong `analysis/ERRORS.md`)
+## Tóm tắt 4 lỗi đã xác nhận (`analysis/ERRORS.md`)
 
 | # | Lỗi | Vị trí | Module tương ứng |
 |---|---|---|---|
