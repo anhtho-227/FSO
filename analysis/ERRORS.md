@@ -6,7 +6,7 @@
 
 ## 1. Tóm tắt điều hành
 
-Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằng ảnh gốc PDF và/hoặc tính toán độc lập nhiều lớp**. Ba lỗi đầu nằm ở Appendix B (toán tử mật độ trung bình theo Gamma-Gamma) và Section VI/VII (chuẩn vết Helstrom). Lỗi thứ tư — nghiêm trọng nhất về mặt hệ quả - là cả một **hướng tiếp cận (Section VIII) cho kết quả hệ thống lệch xa (3–8 lần)** so với giới hạn Helstrom thật, dù công thức đóng cuối cùng (eq. 39/76) tự nó được suy diễn/rút gọn đại số chính xác từ điểm xuất phát (eq. 32-34) - vấn đề nằm ở chính **điểm xuất phát đó**, không phải ở các bước đại số sau.
+Bài báo có **4 lỗi toán học thật, đã xác nhận chắc chắn bằng ảnh gốc PDF và/hoặc tính toán độc lập nhiều lớp**. Ba lỗi đầu nằm ở Appendix B (toán tử mật độ trung bình theo Gamma-Gamma) và Section VI/VII (chuẩn vết Helstrom). Lỗi thứ tư - nghiêm trọng nhất về mặt hệ quả - là cả một **hướng tiếp cận (Section VIII) cho kết quả hệ thống lệch xa (3–8 lần)** so với giới hạn Helstrom thật, dù công thức đóng cuối cùng (eq. 39/76) tự nó được suy diễn/rút gọn đại số chính xác từ điểm xuất phát (eq. 32-34) - vấn đề nằm ở chính **điểm xuất phát đó**, không phải ở các bước đại số sau.
 
 ---
 
