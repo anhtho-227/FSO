@@ -20,7 +20,7 @@ def invert_alpha(alpha_target, lo=1e-6, hi=100):
         return None
 
 def main():
-    print("Comparing Table I with the Rytov model (eq.8-9) -- NOTE: this formula")
+    print("Comparing Table I with the Rytov model (eq.8-9)")
     print("is non-monotonic (has a minimum around sigma_R^2 ~ 0.6-0.7), so a single alpha value")
     print("can correspond to two different sigma_R^2 values (weak / strong scintillation).\n")
     
