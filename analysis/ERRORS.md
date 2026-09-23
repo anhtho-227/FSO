@@ -26,8 +26,8 @@ Bài báo có **4 lỗi toán học**. Ba lỗi đầu nằm ở Appendix B (to�
 ### 3.1 Lỗi #1 - Thiếu `|·|` ở eq. (26)/(30)
 
 Ảnh gốc:
-- eq.(25): $P_{e,1}^{(\min)} = \frac12\Big(1-\text{Tr}\big|p_1\rho_1^{(C)}-p_0\rho_0^{(C)}\big|\Big)$ ✅ đúng
-- eq.(26): $P_{e,1}^{(\min)} = \frac12\Big(1-\sum_k\lambda_k\Big)$ ❌ thiếu `|·|`
+- eq.(25): $P_{e,1}^{(\min)} = \frac12\Big(1-\text{Tr}\big|p_1\rho_1^{(C)}-p_0\rho_0^{(C)}\big|\Big)$ - đúng
+- eq.(26): $P_{e,1}^{(\min)} = \frac12\Big(1-\sum_k\lambda_k\Big)$ -  thiếu `|·|`
 
 Vì $\text{Tr}(\Delta) = p_1\text{Tr}(\rho_1) - p_0\text{Tr}(\rho_0) = p_1 - p_0$, với ưu tiên bằng nhau ($p_0=p_1=0.5$) thì $\sum_k\lambda_k = 0$ luôn luôn, bất kể kênh truyền - khiến eq.(26) tính đúng văn bản sẽ **luôn cho $P_e=0.5$**, vô giá trị. Công thức đúng cần là $\sum_k|\lambda_k|$.
 
@@ -48,7 +48,7 @@ nhưng khi thế công thức Meijer-G (eq. 60) vào để có kết quả cuố
 
 Ảnh gốc trang 7, eq.(24): `$\times\, G^{2,1}_{1,2}(\cdots)$` - **không còn** hệ số ½ ngay trước ký hiệu Meijer-G, dù văn bản nói rõ "Substituting (59) in (57), we get (24)".
 
-**Hệ quả:** mọi phần tử ma trận mật độ tính theo văn bản eq.(24) bị **gấp đôi** giá trị đúng - đã kiểm chứng bằng số: sai lệch đúng 100.00% (tức gấp đôi) ở mọi cặp $(m,n)$ thử nghiệm.
+**Hệ quả:** mọi phần tử ma trận mật độ tính theo văn bản eq.(24) bị **gấp đôi** giá trị đúng - đã kiểm chứng bằng số: sai lệch 100.00% ở mọi cặp $(m,n)$ thử nghiệm.
 
 **Kiểm chứng tổng hợp:** khi sửa **đồng thời cả lỗi #2 và #3** (thêm điều kiện k chẵn + nhân thêm ½), công thức Meijer-G khớp với phương pháp tích phân số độc lập **chính xác đến 0.0000%** ở mọi phần tử ma trận thử nghiệm, và $\text{Tr}(\rho)\approx 1$ (0.99, 0.93, 0.78 khi γ tăng - sai lệch nhỏ dần do cắt cụt Fock basis N=16, sẽ tiến gần 1 hơn nếu tăng N). Đây là bằng chứng mạnh nhất cho thấy **cả 2 lỗi đều là lỗi đánh máy khi rút gọn công thức**, không phải sai sót trong tư duy toán học cốt lõi.
 
@@ -57,14 +57,14 @@ nhưng khi thế công thức Meijer-G (eq. 60) vào để có kết quả cuố
 **Vấn đề gốc rễ (eq. 32):** khi $\psi_1=-\gamma$ được thế vào eq.(31) $\beta_i^{(C)}=\sqrt{I_1}\psi_i+\epsilon_1$, kết quả đúng phải là $\beta_1^{(C)}=-\sqrt{I_1}\gamma+\epsilon_1$ (nhiễu cộng KHÔNG đổi dấu theo tín hiệu - đây là nguyên lý độc lập thống kê cơ bản của nhiễu kênh truyền). Nhưng bài báo viết:
 $$|\psi_1^{(C)}\rangle = |-(\sqrt{I_1}\gamma+\epsilon_1)\rangle = |-\sqrt{I_1}\gamma-\epsilon_1\rangle$$
 
-**Vì sao điều này quan trọng (khác với những gì báo cáo V1/V2 từng đánh giá):** dù phân phối MARGINAL của $\beta_1$ vẫn là $\mathcal N(-\sqrt{I_1}\gamma,\sigma^2)$ trong cả hai cách viết (do nhiễu Gauss đối xứng quanh 0) — đây là lý do trước đây tôi từng (sai) kết luận "không ảnh hưởng" - nhưng khi tính **độ chồng lấn (overlap)** giữa HAI trạng thái dùng CHUNG một $\epsilon_1$ (eq. 34), quy ước dấu này quyết định **quan hệ tương đối** giữa hai trạng thái, không chỉ phân phối riêng lẻ của từng trạng thái. Với quy ước sai của bài báo, ngay cả khi $\gamma=0$ (không có tín hiệu thật, hai trạng thái phát đi giống hệt nhau), nhiễu $\epsilon_1$ vẫn tạo ra một sự "phân biệt giả" giữa hai giả thuyết - điều này vô lý về vật lý (nhiễu không thể tự nhiên giúp phân biệt hai tín hiệu giống hệt nhau).
+**Vì sao điều này quan trọng:** dù phân phối MARGINAL của $\beta_1$ vẫn là $\mathcal N(-\sqrt{I_1}\gamma,\sigma^2)$ trong cả hai cách viết (do nhiễu Gauss đối xứng quanh 0) - nhưng khi tính **độ chồng lấn (overlap)** giữa HAI trạng thái dùng CHUNG một $\epsilon_1$ (eq. 34), quy ước dấu này quyết định **quan hệ tương đối** giữa hai trạng thái, không chỉ phân phối riêng lẻ của từng trạng thái. Với quy ước sai của bài báo, ngay cả khi $\gamma=0$ (không có tín hiệu thật, hai trạng thái phát đi giống hệt nhau), nhiễu $\epsilon_1$ vẫn tạo ra một sự "phân biệt giả" giữa hai giả thuyết - điều này vô lý về vật lý (nhiễu không thể tự nhiên giúp phân biệt hai tín hiệu giống hệt nhau).
 
 **Bằng chứng số quyết định - giới hạn γ→0:**
 
 | Phương pháp | $P_e(\gamma\to 0)$ | Đúng về vật lý? |
 |---|---|---|
-| Toán tử mật độ đúng (density-operator, đã sửa lỗi #2+#3) | **0.500000** | ✅ Đúng - hai trạng thái giống hệt nhau nên không thể phân biệt |
-| eq.(39)/Section VIII | NaN (tràn số) hoặc ≈0.08–0.12 tùy σ | ❌ Sai hoàn toàn |
+| Toán tử mật độ đúng (density-operator, đã sửa lỗi #2+#3) | **0.500000** | Đúng - hai trạng thái giống hệt nhau nên không thể phân biệt |
+| eq.(39)/Section VIII | NaN (tràn số) hoặc ≈0.08–0.12 tùy σ | Sai hoàn toàn |
 
 **Bằng chứng số ở vùng γ bình thường (α=4.0, β=1.9, σ=1):**
 
@@ -78,30 +78,12 @@ $$|\psi_1^{(C)}\rangle = |-(\sqrt{I_1}\gamma+\epsilon_1)\rangle = |-\sqrt{I_1}\g
 
 ---
 
-## 4. Những phần vẫn được xác nhận đúng
-
-| Phần | Trạng thái |
-|---|---|
-| Coherent state, overlap cơ bản (eq. 1-2) | ✅ Đúng |
-| Helstrom bound nhị phân thuần khiết (eq. 3-5) | ✅ Đúng |
-| Rytov variance → α, β (eq. 7-9), Hình 1 | ✅ Đúng |
-| Toán tử mật độ cố định $I_1$ (eq. 20/55, có "k chẵn") | ✅ Đúng |
-| Trung bình nhiễu cộng (Appendix C, eq. 61-70) | ✅ Đúng |
-| Công thức Laplace Bessel-K → Meijer-G tổng quát (eq. 75) | ✅ Đúng |
-| Đại số rút gọn từ (32) → (39) (nếu chấp nhận điểm xuất phát eq.32) | ✅ Đúng về mặt đại số |
-| Công thức lỗi đầu-cuối relay (eq. 12) | ✅ Đúng (là phép toán XOR chuẩn, không phụ thuộc vào cách tính $P_{e,1},P_{e,2}$) |
-| Table I (Weak: α=4.4,β=2.0; Moderate: α=4.0,β=1.9; Strong: α=4.2,β=1.4) | ✅ Đã xác nhận từ ảnh gốc |
-
----
-
-## 5. Công thức đề xuất sửa lại (Appendix B)
+## 4. Công thức đề xuất sửa lại (Appendix B)
 
 Với $A = 1-\dfrac{m+n-k+\alpha_1+\beta_1}{2}$, $B=\dfrac{\alpha_1-\beta_1}{2}$:
 
 $$\big[\rho_i^{(C)}\big]_{m,n} = \frac{1}{\sigma\sqrt{2\pi}}\frac{(\alpha_1\beta_1)^{\frac{\alpha_1+\beta_1}{2}}}{\Gamma(\alpha_1)\Gamma(\beta_1)}\sum_{\substack{k=0\\k\text{ even}}}^{m+n}\binom{m+n}{k}\frac{1}{\sqrt{m!n!}}\left(\frac{1}{1+2\sigma^2}\right)^{\frac{m+n-k-\alpha_1-\beta_1}{2}}\left(\frac{2\sigma^2}{1+2\sigma^2}\right)^{\frac{k+1}{2}}$$
 $$\times\,\Gamma\!\left(\frac{k+1}{2}\right)|\psi_i|^{-m-n-\alpha_1-\beta_1+k}\psi_i^{m+n-k}\times\boxed{\frac12}\,G^{2,1}_{1,2}\!\left(\frac{\alpha_1\beta_1(1+2\sigma^2)}{\psi_i^2}\,\middle|\,A;\,B,-B\right)$$
-
-(phần được đóng khung `½` là bổ sung so với văn bản gốc; điều kiện "k chẵn" dưới dấu tổng cũng là bổ sung).
 
 ---
 
