@@ -76,12 +76,12 @@ Mỗi công thức có lỗi trong `model/` đều có 2 phiên bản song song:
 ## Lưu ý quan trọng khi diễn giải kết quả
 
 - `run_fig3.py --mode match` dùng cách tính "điều kiện hoá từng mẫu, nhiễu độc lập,
-  Fock-basis cắt cụt cho trạng thái thuần khiết" — cách này **khớp đúng độ lớn** với
+  Fock-basis cắt cụt cho trạng thái thuần khiết" - cách này **khớp đúng độ lớn** với
   Hình 3 gốc, nhưng **không phải** giới hạn Helstrom nghiêm ngặt cho toán tử mật độ
   đã trộn hoàn toàn.
 - `run_fig3.py --mode rigorous` mới là giới hạn Helstrom **đúng chuẩn lý thuyết**
   (dùng `model/density_operator.py` + `model/helstrom.py` đã sửa lỗi #2,#3,#1) —
   cho kết quả **cao hơn 3–8 lần** so với công thức đóng eq.(39) của bài báo.
 - Hình 4, 5, 6, 7 hiện dùng eq.(39) (`Pe1_closed_form_eq39`) để nhất quán với cách
-  bài báo trình bày — con số tuyệt đối trong các hình này do đó **thấp hơn giới hạn
-  Helstrom thật ~3-8 lần** (kế thừa lỗi #4), dù xu hướng định tính nhìn chung vẫn đúng.
+  bài báo trình bày - con số tuyệt đối trong các hình này do đó **thấp hơn giới hạn
+  Helstrom thật ~3-8 lần** (lỗi #4), dù xu hướng định tính nhìn chung vẫn đúng.
