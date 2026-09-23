@@ -14,7 +14,7 @@ Bài báo có **4 lỗi toán học**. Ba lỗi đầu nằm ở Appendix B (to�
 
 | # | Lỗi | Vị trí | Bằng chứng | Mức độ nghiêm trọng |
 |---|---|---|---|---|
-| 1 | Thiếu dấu trị tuyệt đối `\|·\|` quanh $\sum_k\lambda_k$ | eq. (26), (30) | **Ảnh gốc trang 7**: eq.(25) có `Tr\|p₁ρ₁-p₀ρ₀\|`; eq.(26) chỉ còn `Σλk` trần | Cao về mặt hình thức, nhưng nhiều khả năng không lọt vào code tạo Hình 3 của tác giả (đường cong không phẳng ở 0.5) |
+| 1 | Thiếu dấu trị tuyệt đối `\|·\|` quanh $\sum_k\lambda_k$ | eq. (26), (30) | **Ảnh gốc trang 7**: eq.(25) có `Tr\|p₁ρ₁-p₀ρ₀\|`; eq.(26) chỉ còn `Σλk` trần | Cao về mặt hình thức, nhưng không ảnh hưởng tới Hình 3 của tác giả (đường cong không phẳng ở 0.5) |
 | 2 | Thiếu điều kiện "k chẵn" | eq. (22)-(24), tức eq.(60) | **Ảnh gốc trang 13**: eq.(57) có "$k$ even"; eq.(22) sau khi thế Meijer-G vào thì mất | Cao - làm hỏng hoàn toàn tính hợp lệ của ma trận mật độ (trace ≠ 1) nếu tính đúng văn bản |
 | 3 | Thiếu hệ số **½** | eq. (22)-(24) | **Ảnh gốc trang 13**: eq.(60) có `$b^{-\nu}/2$`; ảnh gốc trang 7 eq.(24): hệ số ½ biến mất ngay trước $G^{2,1}_{1,2}$ | Cao - gây sai lệch đúng gấp 2 lần mọi phần tử ma trận nếu tính đúng văn bản |
 | 4 | Quy ước nhiễu chia sẻ, đảo dấu theo tín hiệu (eq. 32) khiến toàn bộ Section VIII tính **sai bản chất** giới hạn Helstrom | eq. (32)–(39), lan ra toàn bộ Section VIII và các Hình 3–7 dùng eq.(39) | Đối chiếu số trực tiếp: Pe thật (density-operator, đã sửa lỗi #2+#3) = 0.10–0.22; Pe theo eq.(39) chỉ 0.013–0.071 - **lệch 3–8 lần** | **Nghiêm trọng nhất** - ảnh hưởng toàn bộ kết luận định lượng của bài báo |
